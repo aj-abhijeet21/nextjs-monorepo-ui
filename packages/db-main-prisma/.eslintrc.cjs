@@ -1,14 +1,14 @@
 /**
  * Specific eslint rules for this workspace, learn how to compose
- * @link https://github.com/belgattitude/perso/tree/main/packages/eslint-config-bases
+ * @link https://github.com/aj-abhijeet21/perso/tree/main/packages/eslint-config-bases
  */
 
 // Workaround for https://github.com/eslint/eslint/issues/3458
-require('@your-org/eslint-config-bases/patch/modern-module-resolution');
+require('@ajabhijeet21-internal/eslint-config-bases/patch/modern-module-resolution');
 
 const {
   getDefaultIgnorePatterns,
-} = require('@your-org/eslint-config-bases/helpers');
+} = require('@ajabhijeet21-internal/eslint-config-bases/helpers');
 
 module.exports = {
   root: true,
@@ -19,11 +19,11 @@ module.exports = {
   },
   ignorePatterns: [...getDefaultIgnorePatterns(), 'src/generated'],
   extends: [
-    '@your-org/eslint-config-bases/typescript',
-    '@your-org/eslint-config-bases/sonar',
-    '@your-org/eslint-config-bases/regexp',
+    '@ajabhijeet21-internal/eslint-config-bases/typescript',
+    '@ajabhijeet21-internal/eslint-config-bases/sonar',
+    '@ajabhijeet21-internal/eslint-config-bases/regexp',
     // Apply prettier and disable incompatible rules
-    '@your-org/eslint-config-bases/prettier-plugin',
+    '@ajabhijeet21-internal/eslint-config-bases/prettier-plugin',
   ],
   overrides: [
     // optional overrides per project file match

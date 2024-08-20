@@ -24,18 +24,24 @@
       "@/pages/*": ["./pages/*"],
       "@/public/*": ["../public/*"],
       "@/themes/*": ["./themes/*"],
-      "@your-org/common-i18n": ["../../../packages/common-i18n/src/index"],
-      "@your-org/common-i18n/locales/*": [
+      "@ajabhijeet21-internal/common-i18n": [
+        "../../../packages/common-i18n/src/index"
+      ],
+      "@ajabhijeet21-internal/common-i18n/locales/*": [
         "../../../packages/common-i18n/src/locales/*"
       ],
-      "@your-org/ui-lib/*": ["../../../packages/ui-lib/src/*"],
-      "@your-org/ui-lib": ["../../../packages/ui-lib/src/index"],
-      "@your-org/core-lib/*": ["../../../packages/core-lib/src/*"],
-      "@your-org/core-lib": ["../../../packages/core-lib/src/index"],
-      "@your-org/db-main-prisma": [
+      "@ajabhijeet21-internal/ui-lib/*": ["../../../packages/ui-lib/src/*"],
+      "@ajabhijeet21-internal/ui-lib": ["../../../packages/ui-lib/src/index"],
+      "@ajabhijeet21-internal/core-lib/*": ["../../../packages/core-lib/src/*"],
+      "@ajabhijeet21-internal/core-lib": [
+        "../../../packages/core-lib/src/index"
+      ],
+      "@ajabhijeet21-internal/db-main-prisma": [
         "../../../packages/db-main-prisma/src/index"
       ],
-      "@your-org/ts-utils": ["../../../packages/ts-utils/src/index"]
+      "@ajabhijeet21-internal/ts-utils": [
+        "../../../packages/ts-utils/src/index"
+      ]
     },
     "types": ["vitest/globals", "@testing-library/jest-dom/vitest"]
   },

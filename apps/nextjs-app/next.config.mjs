@@ -178,7 +178,7 @@ const nextConfig = {
     //
     // Note that yarn 3+/4 is less impacted thanks to supportedArchitectures.
     // See https://yarnpkg.com/configuration/yarnrc#supportedArchitectures and
-    // config example in https://github.com/belgattitude/nextjs-monorepo-example/pull/3582
+    // config example in https://github.com/aj-abhijeet21/nextjs-monorepo-ui/pull/3582
     // NPM/PNPM might adopt https://github.com/npm/rfcs/pull/519 in the future.
     //
     // Caution: use it with care because you'll have to maintain this over time.

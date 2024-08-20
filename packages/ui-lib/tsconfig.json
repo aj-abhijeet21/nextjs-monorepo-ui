@@ -11,7 +11,9 @@
     "noEmit": false,
     "incremental": true,
     "paths": {
-      "@your-org/ts-utils": ["../../../packages/ts-utils/src/index"]
+      "@ajabhijeet21-internal/ts-utils": [
+        "../../../packages/ts-utils/src/index"
+      ]
     },
     "types": ["@testing-library/jest-dom/vitest"]
   },

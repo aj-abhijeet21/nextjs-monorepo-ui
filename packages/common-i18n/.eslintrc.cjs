@@ -1,11 +1,11 @@
 /**
  * Specific eslint rules for this app/package, extends the base rules
- * @see https://github.com/belgattitude/nextjs-monorepo-example/blob/main/docs/about-linters.md
+ * @see https://github.com/aj-abhijeet21/nextjs-monorepo-ui/blob/main/docs/about-linters.md
  */
 
 const {
   getDefaultIgnorePatterns,
-} = require('@your-org/eslint-config-bases/helpers');
+} = require('@ajabhijeet21-internal/eslint-config-bases/helpers');
 
 module.exports = {
   root: true,
@@ -16,9 +16,9 @@ module.exports = {
   },
   ignorePatterns: [...getDefaultIgnorePatterns()],
   extends: [
-    '@your-org/eslint-config-bases/typescript',
+    '@ajabhijeet21-internal/eslint-config-bases/typescript',
     // Apply prettier and disable incompatible rules
-    '@your-org/eslint-config-bases/prettier-plugin',
+    '@ajabhijeet21-internal/eslint-config-bases/prettier-plugin',
   ],
   rules: {
     // optional overrides per project

@@ -4,7 +4,7 @@
  * you can opt out by commenting the following code.
  * @link https://react.i18next.com/latest/typescript
  */
-import type { I18nResources } from '@your-org/common-i18n';
+import type { I18nResources } from '@ajabhijeet21-internal/common-i18n';
 
 declare module 'i18next' {
   interface CustomTypeOptions {

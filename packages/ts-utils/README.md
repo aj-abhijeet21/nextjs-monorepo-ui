@@ -1,9 +1,9 @@
-# @your-org/ts-utils
+# @ajabhijeet21-internal/ts-utils
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/belgattitude/nextjs-monorepo-example/ci-packages.yml?style=for-the-badge&label=CI)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/abhijeet21/nextjs-monorepo-ui/ci-packages.yml?style=for-the-badge&label=CI)
 
 > **Note**
-> This package is part of [belgattitude/nextjs-monorepo-example](https://github.com/belgattitude/nextjs-monorepo-example).
+> This package is part of [abhijeet21/nextjs-monorepo-ui](https://github.com/aj-abhijeet21/nextjs-monorepo-ui).
 
 A package holding some basic typescript utilities: typeguards, assertions...
 
@@ -16,7 +16,7 @@ A package holding some basic typescript utilities: typeguards, assertions...
 From any package or apps:
 
 ```bash
-yarn add @your-org/ts-utils@"workspace:^"
+yarn add @ajabhijeet21-internal/ts-utils@"workspace:^"
 ```
 
 ## Enable aliases
@@ -27,7 +27,9 @@ yarn add @your-org/ts-utils@"workspace:^"
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "@your-org/ts-utils": ["../../../packages/ts-utils/src/index"],
+      "@ajabhijeet21-internal/ts-utils": [
+        "../../../packages/ts-utils/src/index",
+      ],
     },
   },
 }
@@ -36,7 +38,7 @@ yarn add @your-org/ts-utils@"workspace:^"
 ## Consume
 
 ```typescript
-import { isPlainObject } from "@your-org/ts-utils";
+import { isPlainObject } from "@ajabhijeet21-internal/ts-utils";
 
 isPlainObject(true) === false;
 ```

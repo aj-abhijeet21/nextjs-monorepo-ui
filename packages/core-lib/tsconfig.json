@@ -11,7 +11,9 @@
     "incremental": true,
     "paths": {
       "@/test-utils": ["../config/test/test-utils"],
-      "@your-org/ts-utils": ["../../../packages/ts-utils/src/index"]
+      "@ajabhijeet21-internal/ts-utils": [
+        "../../../packages/ts-utils/src/index"
+      ]
     },
     "types": ["vitest/globals"]
   },

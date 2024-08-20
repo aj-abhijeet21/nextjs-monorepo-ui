@@ -1,5 +1,5 @@
 {
-  "name": "@your-org/core-lib",
+  "name": "@ajabhijeet21-internal/core-lib",
   "version": "3.15.3",
   "private": true,
   "type": "module",
@@ -24,14 +24,14 @@
     "dist"
   ],
   "author": {
-    "name": "Vanvelthem Sébastien",
-    "url": "https://github.com/belgattitude"
+    "name": "Abhijeet Jagtap",
+    "url": "https://github.com/aj-abhijeet21"
   },
   "license": "MIT",
-  "homepage": "https://github.com/belgattitude/nextjs-monorepo-example",
+  "homepage": "https://github.com/aj-abhijeet21/nextjs-monorepo-ui",
   "repository": {
     "type": "git",
-    "url": "https://github.com/belgattitude/nextjs-monorepo-example",
+    "url": "https://github.com/aj-abhijeet21/nextjs-monorepo-ui",
     "directory": "packages/core-lib"
   },
   "scripts": {
@@ -47,10 +47,11 @@
     "typecheck": "tsc --project ./tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@your-org/ts-utils": "workspace:^",
+    "@ajabhijeet21-internal/ts-utils": "workspace:^",
     "dequal": "^2.0.3"
   },
   "devDependencies": {
+    "@ajabhijeet21-internal/eslint-config-bases": "workspace:^",
     "@testing-library/dom": "10.4.0",
     "@testing-library/react": "16.0.0",
     "@testing-library/user-event": "14.5.2",
@@ -60,7 +61,6 @@
     "@vitejs/plugin-react": "4.3.1",
     "@vitest/coverage-v8": "2.0.5",
     "@vitest/ui": "2.0.5",
-    "@your-org/eslint-config-bases": "workspace:^",
     "cross-env": "7.0.3",
     "eslint": "8.57.0",
     "npm-run-all2": "6.2.2",

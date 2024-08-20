@@ -2,9 +2,14 @@
   "$schema": "https://unpkg.com/@changesets/config@2.3.1/schema.json",
   "changelog": [
     "@changesets/changelog-github",
-    { "repo": "belgattitude/nextjs-monorepo-example" }
+    {
+      "repo": "aj-abhijeet21/nextjs-monorepo-ui"
+    }
   ],
-  "privatePackages": { "version": true, "tag": true },
+  "privatePackages": {
+    "version": true,
+    "tag": true
+  },
   "commit": true,
   "linked": [],
   "access": "restricted",

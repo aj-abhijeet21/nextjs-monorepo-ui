@@ -16,14 +16,14 @@ module.exports = {
   root: true, // Be sure to set root to true in monorepo.
   ignorePatterns: ["**/node_modules", "**/.cache", "build", ".next"],
   extends: [
-    "@your-org/eslint-config-bases/typescript",
-    "@your-org/eslint-config-bases/sonar",
-    "@your-org/eslint-config-bases/regexp",
-    "@your-org/eslint-config-bases/jest",
-    "@your-org/eslint-config-bases/react",
-    "@your-org/eslint-config-bases/rtl",
-    "@your-org/eslint-config-bases/graphql-schema",
-    "@your-org/eslint-config-bases/storybook",
+    "@ajabhijeet21-internal/eslint-config-bases/typescript",
+    "@ajabhijeet21-internal/eslint-config-bases/sonar",
+    "@ajabhijeet21-internal/eslint-config-bases/regexp",
+    "@ajabhijeet21-internal/eslint-config-bases/jest",
+    "@ajabhijeet21-internal/eslint-config-bases/react",
+    "@ajabhijeet21-internal/eslint-config-bases/rtl",
+    "@ajabhijeet21-internal/eslint-config-bases/graphql-schema",
+    "@ajabhijeet21-internal/eslint-config-bases/storybook",
 
     // Add specific rules for your framework if needed.
     // ie:
@@ -33,7 +33,7 @@ module.exports = {
 
     // Post configure the prettier base so there won't be
     // any conficts between eslint / prettier
-    "@your-org/eslint-config-bases/prettier",
+    "@ajabhijeet21-internal/eslint-config-bases/prettier",
   ],
   rules: {
     // Specific global rules for your app or package
@@ -50,7 +50,7 @@ module.exports = {
 .
 ├── apps
 │   ├── remix-app
-│   │   └── .eslintrc.js  (extends from [@your-org/eslint-config-bases/react])
+│   │   └── .eslintrc.js  (extends from [@ajabhijeet21-internal/eslint-config-bases/react])
 │   └── nextjs-app
 │       └── .eslintrc.js
 └── packages

@@ -1,5 +1,5 @@
+import { isIsoDateString } from '@ajabhijeet21-internal/ts-utils';
 import { test, expect } from '@playwright/test';
-import { isIsoDateString } from '@your-org/ts-utils';
 import type { HealthCheckApiPayload } from '@/pages/api/_monitor/healthcheck';
 import packageJson from '../../../package.json' assert { type: 'json' };
 

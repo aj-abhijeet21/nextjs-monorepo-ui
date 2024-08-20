@@ -1,6 +1,6 @@
 /**
  * Custom config base for projects using typescript / javascript.
- * @see https://github.com/belgattitude/nextjs-monorepo-example/tree/main/packages/eslint-config-bases
+ * @see https://github.com/aj-abhijeet21/nextjs-monorepo-ui/tree/main/packages/eslint-config-bases
  */
 
 // Allow to pass an env to check cycles, defaults to 2 (lint time+++)

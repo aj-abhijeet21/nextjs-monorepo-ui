@@ -1,6 +1,6 @@
 /**
  * Opinionated config base for https://github.com/mdx-js/eslint-mdx
- * @see https://github.com/belgattitude/nextjs-monorepo-example/tree/main/packages/eslint-config-bases
+ * @see https://github.com/aj-abhijeet21/nextjs-monorepo-ui/tree/main/packages/eslint-config-bases
  */
 
 const mdxPatterns = {

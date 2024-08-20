@@ -4,14 +4,14 @@
   "private": true,
   "type": "module",
   "author": {
-    "name": "Vanvelthem Sébastien",
-    "url": "https://github.com/belgattitude"
+    "name": "Abhijeet Jagtap",
+    "url": "https://github.com/aj-abhijeet21"
   },
   "license": "MIT",
-  "homepage": "https://github.com/belgattitude/nextjs-monorepo-example",
+  "homepage": "https://github.com/aj-abhijeet21/nextjs-monorepo-ui",
   "repository": {
     "type": "git",
-    "url": "https://github.com/belgattitude/nextjs-monorepo-example",
+    "url": "https://github.com/aj-abhijeet21/nextjs-monorepo-ui",
     "directory": "apps/nextjs-app"
   },
   "scripts": {
@@ -46,6 +46,11 @@
     ]
   },
   "dependencies": {
+    "@ajabhijeet21-internal/common-i18n": "workspace:^",
+    "@ajabhijeet21-internal/core-lib": "workspace:^",
+    "@ajabhijeet21-internal/db-main-prisma": "workspace:^",
+    "@ajabhijeet21-internal/ts-utils": "workspace:^",
+    "@ajabhijeet21-internal/ui-lib": "workspace:^",
     "@emotion/cache": "11.13.1",
     "@emotion/react": "11.13.0",
     "@emotion/server": "11.11.0",
@@ -78,11 +83,6 @@
     "@soluble/cache-ioredis": "0.13.11",
     "@tanstack/react-query": "5.51.24",
     "@vercel/analytics": "1.3.1",
-    "@your-org/common-i18n": "workspace:^",
-    "@your-org/core-lib": "workspace:^",
-    "@your-org/db-main-prisma": "workspace:^",
-    "@your-org/ts-utils": "workspace:^",
-    "@your-org/ui-lib": "workspace:^",
     "clsx": "2.1.1",
     "cors": "2.8.5",
     "graphql": "16.9.0",

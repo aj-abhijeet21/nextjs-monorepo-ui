@@ -6,14 +6,14 @@
 . (git root)
 
 ├──🌳 apps
-│   ├── 🍂 nextjs-app 
+│   ├── 🍂 nextjs-app
 │   │    └─ package.json  (name: 'nextjs-app')
-│   └── 🍂 [ ...react-expo-app, tauri-app...] 
+│   └── 🍂 [ ...react-expo-app, tauri-app...]
 │
-├──🧩 packages    
-│   ├── 📦 design-system  (name: '@your-org/design-system')       
-│   │    └─ package.json  
-│   └── 📦 [...api, db, common-i18n, ts-utils...] 
+├──🧩 packages
+│   ├── 📦 design-system  (name: '@ajabhijeet21-internal/design-system')
+│   │    └─ package.json
+│   └── 📦 [...api, db, common-i18n, ts-utils...]
 └── package.json
 ```
 
@@ -38,7 +38,6 @@
 The project takes inspiration from the popular [bulletproof-react](https://github.com/alan2207/bulletproof-react) guide
 ([direct link](https://github.com/alan2207/bulletproof-react/blob/master/docs/project-structure.md)) with adaptations
 specific to nextjs (no appDir) and server side features.
-
 
 ```
 🌳 nextjs-app

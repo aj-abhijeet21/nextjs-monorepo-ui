@@ -72,7 +72,7 @@ RUN yarn install --inline-builds
 COPY --from=app-builder /app/out/nextjs-app/full/ .
 COPY --link .gitignore turbo.json tsconfig.base.json ./
 
-RUN yarn workspace @your-org/db-main-prisma prisma-generate
+RUN yarn workspace @ajabhijeet21-internal/db-main-prisma prisma-generate
 RUN yarn turbo run build --filter=nextjs-app...
 
 #############################################################

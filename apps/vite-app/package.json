@@ -16,22 +16,22 @@
     "typecheck": "tsc --project ./tsconfig.json --noEmit"
   },
   "dependencies": {
+    "@ajabhijeet21-internal/common-i18n": "workspace:^",
+    "@ajabhijeet21-internal/core-lib": "workspace:^",
+    "@ajabhijeet21-internal/ui-lib": "workspace:^",
     "@emotion/react": "11.13.0",
     "@emotion/styled": "11.13.0",
-    "@your-org/common-i18n": "workspace:^",
-    "@your-org/core-lib": "workspace:^",
-    "@your-org/ui-lib": "workspace:^",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
   "devDependencies": {
+    "@ajabhijeet21-internal/eslint-config-bases": "workspace:^",
     "@babel/core": "7.25.2",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
     "@vitejs/plugin-react": "4.3.1",
     "@vitest/coverage-v8": "2.0.5",
     "@vitest/ui": "2.0.5",
-    "@your-org/eslint-config-bases": "workspace:^",
     "eslint": "8.57.0",
     "eslint-plugin-tailwindcss": "3.17.4",
     "happy-dom": "14.12.3",

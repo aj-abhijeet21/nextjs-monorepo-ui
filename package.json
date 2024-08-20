@@ -14,12 +14,12 @@
     "workspace"
   ],
   "author": {
-    "name": "Vanvelthem Sébastien",
-    "url": "https://github.com/belgattitude"
+    "name": "Abhijeet Jagtap",
+    "url": "https://github.com/aj-abhijeet21"
   },
   "license": "MIT",
-  "homepage": "https://github.com/belgattitude/nextjs-monorepo-example",
-  "repository": "belgattitude/nextjs-monorepo-example",
+  "homepage": "https://github.com/aj-abhijeet21/nextjs-monorepo-ui",
+  "repository": "abhijeet21/nextjs-monorepo-ui",
   "scripts": {
     "check:git-pristine": "./scripts/check-git-pristine.sh",
     "clean:global-cache": "rimraf ./.cache",
@@ -27,12 +27,13 @@
     "deps:check": "npx npm-check-updates@latest --configFileName .ncurc.yml --workspaces --root --mergeConfig",
     "deps:update": "npx npm-check-updates@latest --configFileName .ncurc.yml -u --workspaces --root --mergeConfig",
     "g:build": "turbo run build",
+    "g:dev": "turbo run dev",
     "g:changeset": "changeset",
     "g:check-dist": "turbo run check-dist",
     "g:clean": "yarn clean:global-cache && yarn clean:turbo && rimraf ./out && yarn workspaces foreach -A -ptv run clean",
     "g:codegen": "turbo run codegen",
     "g:fix-all-files": "turbo run fix-all-files",
-    "g:lint": "TIMING=1 turbo run lint --color",
+    "g:lint": "TIMING=1 turbo run lint --cache-dir=.cache/turbo --color",
     "g:lint-staged-files": "lint-staged --allow-empty",
     "g:lint-styles": "turbo run lint-styles --color",
     "g:release": "yarn g:build && changeset publish",
@@ -50,12 +51,12 @@
     "cross-env": "7.0.3"
   },
   "devDependencies": {
+    "@ajabhijeet21-internal/eslint-config-bases": "workspace:^",
     "@changesets/changelog-github": "0.5.0",
     "@changesets/cli": "2.27.7",
     "@commitlint/cli": "19.4.0",
     "@commitlint/config-conventional": "19.2.2",
     "@types/shell-quote": "1.7.5",
-    "@your-org/eslint-config-bases": "workspace:^",
     "eslint": "8.57.0",
     "husky": "9.1.5",
     "lint-staged": "15.2.9",
