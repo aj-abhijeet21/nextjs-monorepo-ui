@@ -12,11 +12,9 @@ export default {
   },
 } as Meta<typeof Button>;
 
-export const Primary = {
+export const Outline = {
   args: {
-    primary: true,
-    label: 'Button',
-    size: 'medium',
+    variant: 'outline',
   },
 };
 

@@ -1,10 +1,10 @@
 import { useTranslation } from 'next-i18next';
 import { NextSeo } from 'next-seo';
 import type { FC } from 'react';
-import { Banner } from '@/components/banner/Banner';
-import { MainLayout } from '@/layouts/main';
 import { CtaBlock, FeaturesBlock, HeroBlock } from '../blocks';
 import { homeConfig } from '../home.config';
+import { Banner } from '@/components/banner/Banner';
+import { MainLayout } from '@/layouts/main';
 
 export const HomePage: FC = () => {
   const { t } = useTranslation(homeConfig.i18nNamespaces);
@@ -16,7 +16,7 @@ export const HomePage: FC = () => {
         description="See https://github.com/belgattitude/nextjs-monorepo-example"
       />
       <MainLayout>
-        <Banner />
+        {/* <Banner /> */}
         <HeroBlock />
         <FeaturesBlock />
         <CtaBlock />
