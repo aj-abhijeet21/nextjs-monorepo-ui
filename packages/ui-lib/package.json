@@ -1,7 +1,7 @@
 {
   "name": "@ajabhijeet21-internal/ui-lib",
   "version": "3.15.2",
-  "private": true,
+  "private": false,
   "sideEffects": false,
   "type": "module",
   "files": [
