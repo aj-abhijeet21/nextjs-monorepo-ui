@@ -1,5 +1,29 @@
 # @ajabhijeet21-internal/ui-lib
 
+## 4.2.1
+
+### Patch Changes
+
+- [#8](https://github.com/aj-abhijeet21/nextjs-monorepo-ui/pull/8) [`97d3cca`](https://github.com/aj-abhijeet21/nextjs-monorepo-ui/commit/97d3cca6dffc514c2c473a613a5afd364488facb) Thanks [@aj-abhijeet21](https://github.com/aj-abhijeet21)! - Minor version bump 3
+
+## 4.2.0
+
+### Minor Changes
+
+- [#6](https://github.com/aj-abhijeet21/nextjs-monorepo-ui/pull/6) [`3cbfe08`](https://github.com/aj-abhijeet21/nextjs-monorepo-ui/commit/3cbfe08d2429cb19f1a860e8e069a2b80b80f13d) Thanks [@aj-abhijeet21](https://github.com/aj-abhijeet21)! - Minor version bump 2
+
+## 4.1.0
+
+### Minor Changes
+
+- [#4](https://github.com/aj-abhijeet21/nextjs-monorepo-ui/pull/4) [`014651e`](https://github.com/aj-abhijeet21/nextjs-monorepo-ui/commit/014651e09e1f1fc1adba539aa0fe274f6e1e8ede) Thanks [@aj-abhijeet21](https://github.com/aj-abhijeet21)! - Minor version bump
+
+## 4.0.0
+
+### Major Changes
+
+- [#1](https://github.com/aj-abhijeet21/nextjs-monorepo-ui/pull/1) [`f706f46`](https://github.com/aj-abhijeet21/nextjs-monorepo-ui/commit/f706f462f00f88c40aa57aa2f1bc4916e0201db5) Thanks [@aj-abhijeet21](https://github.com/aj-abhijeet21)! - New button component from shadcn
+
 ## 3.15.2
 
 ### Patch Changes
