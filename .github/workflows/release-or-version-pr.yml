@@ -32,8 +32,10 @@ jobs:
 
       - name: Build monorepo
         run: |
-          yarn turbo build-force --filter=@ajabhijeet21-internal/ui-lib
+          yarn g:build  
+          # yarn turbo build-force --filter=@ajabhijeet21-internal/ui-lib
           cat .npmrc
+          ls -lrt
           ls -R packages/*/dist
 
       # @link https://github.com/changesets/action
@@ -62,7 +64,7 @@ jobs:
         if: steps.changesets.outputs.published == 'true'
         uses: softprops/action-gh-release@v1
         with:
-          token: ${{ secrets.GH_ORG_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           tag_name: ${{ steps.changesets.outputs.version }}
           name: ${{ steps.changesets.outputs.version }}
           body: ${{ steps.changesets.outputs.release_notes }}
