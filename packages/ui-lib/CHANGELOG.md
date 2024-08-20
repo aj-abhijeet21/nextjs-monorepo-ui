@@ -1,5 +1,11 @@
 # @ajabhijeet21-internal/ui-lib
 
+## 4.1.0
+
+### Minor Changes
+
+- [#4](https://github.com/aj-abhijeet21/nextjs-monorepo-ui/pull/4) [`014651e`](https://github.com/aj-abhijeet21/nextjs-monorepo-ui/commit/014651e09e1f1fc1adba539aa0fe274f6e1e8ede) Thanks [@aj-abhijeet21](https://github.com/aj-abhijeet21)! - Minor version bump
+
 ## 4.0.0
 
 ### Major Changes
