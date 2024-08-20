@@ -1,5 +1,12 @@
 # nextjs-app
 
+## 3.59.2
+
+### Patch Changes
+
+- Updated dependencies [[`f706f46`](https://github.com/aj-abhijeet21/nextjs-monorepo-ui/commit/f706f462f00f88c40aa57aa2f1bc4916e0201db5)]:
+  - @ajabhijeet21-internal/ui-lib@4.0.0
+
 ## 3.59.1
 
 ### Patch Changes
