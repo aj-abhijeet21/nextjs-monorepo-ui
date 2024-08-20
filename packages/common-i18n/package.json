@@ -4,6 +4,11 @@
   "private": true,
   "sideEffects": false,
   "type": "module",
+  "files": [
+    "README.md",
+    "src/",
+    "package.json"
+  ],
   "exports": {
     "./locales/*.json": {
       "require": "./src/locales/*.json",
