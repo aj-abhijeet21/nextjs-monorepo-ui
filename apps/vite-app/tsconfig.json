@@ -10,11 +10,15 @@
     "jsxImportSource": "@emotion/react",
     "incremental": true,
     "paths": {
-      "@your-org/ui-lib/*": ["../../../packages/ui-lib/src/*"],
-      "@your-org/ui-lib": ["../../../packages/ui-lib/src/index"],
-      "@your-org/core-lib/*": ["../../../packages/core-lib/src/*"],
-      "@your-org/core-lib": ["../../../packages/core-lib/src/index"],
-      "@your-org/ts-utils": ["../../../packages/ts-utils/src/index"]
+      "@ajabhijeet21-internal/ui-lib/*": ["../../../packages/ui-lib/src/*"],
+      "@ajabhijeet21-internal/ui-lib": ["../../../packages/ui-lib/src/index"],
+      "@ajabhijeet21-internal/core-lib/*": ["../../../packages/core-lib/src/*"],
+      "@ajabhijeet21-internal/core-lib": [
+        "../../../packages/core-lib/src/index"
+      ],
+      "@ajabhijeet21-internal/ts-utils": [
+        "../../../packages/ts-utils/src/index"
+      ]
     },
     "types": ["@testing-library/jest-dom/vitest"]
   },

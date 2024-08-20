@@ -13,10 +13,10 @@ export const HomePage: FC = () => {
     <>
       <NextSeo
         title={t('home:page.title')}
-        description="See https://github.com/belgattitude/nextjs-monorepo-example"
+        description="See https://github.com/aj-abhijeet21/nextjs-monorepo-ui"
       />
       <MainLayout>
-        <Banner />
+        {/* <Banner /> */}
         <HeroBlock />
         <FeaturesBlock />
         <CtaBlock />

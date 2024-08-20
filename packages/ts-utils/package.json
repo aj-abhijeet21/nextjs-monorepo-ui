@@ -1,5 +1,5 @@
 {
-  "name": "@your-org/ts-utils",
+  "name": "@ajabhijeet21-internal/ts-utils",
   "version": "1.1.2",
   "private": true,
   "sideEffects": false,
@@ -12,14 +12,14 @@
     "./package.json": "./package.json"
   },
   "author": {
-    "name": "Vanvelthem Sébastien",
-    "url": "https://github.com/belgattitude"
+    "name": "Abhijeet Jagtap",
+    "url": "https://github.com/aj-abhijeet21"
   },
   "license": "MIT",
-  "homepage": "https://github.com/belgattitude/nextjs-monorepo-example",
+  "homepage": "https://github.com/aj-abhijeet21/nextjs-monorepo-ui",
   "repository": {
     "type": "git",
-    "url": "https://github.com/belgattitude/nextjs-monorepo-example",
+    "url": "https://github.com/aj-abhijeet21/nextjs-monorepo-ui",
     "directory": "packages/ts-utils"
   },
   "scripts": {
@@ -37,10 +37,10 @@
     "typecheck": "tsc --project ./tsconfig.json --noEmit"
   },
   "devDependencies": {
+    "@ajabhijeet21-internal/eslint-config-bases": "workspace:^",
     "@size-limit/file": "11.1.4",
     "@types/node": "22.4.1",
     "@vitest/coverage-v8": "2.0.5",
-    "@your-org/eslint-config-bases": "workspace:^",
     "cross-env": "7.0.3",
     "es-check": "7.2.1",
     "eslint": "8.57.0",

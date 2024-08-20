@@ -1,6 +1,6 @@
-# @your-org/common-i18n
+# @ajabhijeet21-internal/common-i18n
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/belgattitude/nextjs-monorepo-example/ci-packages.yml?style=for-the-badge&label=CI)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/abhijeet21/nextjs-monorepo-ui/ci-packages.yml?style=for-the-badge&label=CI)
 
 ## Purpose
 
@@ -16,7 +16,7 @@ organization into namespaces fits well with i18next/react-i18next/next-18next.
 Add the workspace dependency to the consuming app or package.
 
 ```bash
-yarn add @your-org/common-locales:"workspace:^"
+yarn add @ajabhijeet21-internal/common-locales:"workspace:^"
 ```
 
 Add the paths in the app tsconfig.json.
@@ -25,8 +25,10 @@ Add the paths in the app tsconfig.json.
 {
   "compilerOptions": {
     "paths": {
-      "@your-org/common-i18n": ["../../../packages/common-i18n/src/index"],
-      "@your-org/common-i18n/locales/*": [
+      "@ajabhijeet21-internal/common-i18n": [
+        "../../../packages/common-i18n/src/index",
+      ],
+      "@ajabhijeet21-internal/common-i18n/locales/*": [
         "../../../packages/common-i18n/src/locales/*",
       ],
     },
@@ -45,7 +47,7 @@ Optionally create a file named `apps/my-app/types.d/i18next.d.ts` to enable type
  * you can opt out by commenting the following code.
  * @link https://react.i18next.com/latest/typescript
  */
-import type { I18nResources } from "@your-org/common-i18n";
+import type { I18nResources } from "@ajabhijeet21-internal/common-i18n";
 
 declare module "i18next" {
   interface CustomTypeOptions {

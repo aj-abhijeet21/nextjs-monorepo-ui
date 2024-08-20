@@ -1,6 +1,6 @@
+import type { PrismaClientDbMain } from '@ajabhijeet21-internal/db-main-prisma';
+import type { UnPromisify } from '@ajabhijeet21-internal/ts-utils';
 import { HttpInternalServerError } from '@httpx/exception';
-import type { PrismaClientDbMain } from '@your-org/db-main-prisma';
-import type { UnPromisify } from '@your-org/ts-utils';
 import type { SearchPoemsParams } from './SearchPoems.types';
 
 type SearchPoems = UnPromisify<ReturnType<SearchPoemsQuery['searchPoems']>>;

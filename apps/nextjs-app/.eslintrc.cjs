@@ -1,14 +1,14 @@
 /**
  * Specific eslint rules for this app/package, extends the base rules
- * @see https://github.com/belgattitude/nextjs-monorepo-example/blob/main/docs/about-linters.md
+ * @see https://github.com/aj-abhijeet21/nextjs-monorepo-ui/blob/main/docs/about-linters.md
  */
 
 // Workaround for https://github.com/eslint/eslint/issues/3458 (re-export of @rushstack/eslint-patch)
-require('@your-org/eslint-config-bases/patch/modern-module-resolution');
+require('@ajabhijeet21-internal/eslint-config-bases/patch/modern-module-resolution');
 
 const {
   getDefaultIgnorePatterns,
-} = require('@your-org/eslint-config-bases/helpers');
+} = require('@ajabhijeet21-internal/eslint-config-bases/helpers');
 
 module.exports = {
   root: true,
@@ -19,17 +19,17 @@ module.exports = {
   },
   ignorePatterns: [...getDefaultIgnorePatterns(), '.next', '.out'],
   extends: [
-    '@your-org/eslint-config-bases/typescript',
-    '@your-org/eslint-config-bases/sonar',
-    '@your-org/eslint-config-bases/regexp',
-    '@your-org/eslint-config-bases/jest',
-    '@your-org/eslint-config-bases/react',
-    '@your-org/eslint-config-bases/tailwind',
-    '@your-org/eslint-config-bases/rtl',
+    '@ajabhijeet21-internal/eslint-config-bases/typescript',
+    '@ajabhijeet21-internal/eslint-config-bases/sonar',
+    '@ajabhijeet21-internal/eslint-config-bases/regexp',
+    '@ajabhijeet21-internal/eslint-config-bases/jest',
+    '@ajabhijeet21-internal/eslint-config-bases/react',
+    '@ajabhijeet21-internal/eslint-config-bases/tailwind',
+    '@ajabhijeet21-internal/eslint-config-bases/rtl',
     // Add specific rules for nextjs
     'plugin:@next/next/core-web-vitals',
     // Apply prettier and disable incompatible rules
-    '@your-org/eslint-config-bases/prettier-plugin',
+    '@ajabhijeet21-internal/eslint-config-bases/prettier-plugin',
   ],
   rules: {
     '@typescript-eslint/naming-convention': 'off',

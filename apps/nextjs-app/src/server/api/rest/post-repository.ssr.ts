@@ -1,6 +1,9 @@
+import type { PrismaClientDbMain } from '@ajabhijeet21-internal/db-main-prisma';
+import {
+  assertIsPresent,
+  type UnPromisify,
+} from '@ajabhijeet21-internal/ts-utils';
 import { HttpInternalServerError, HttpNotFound } from '@httpx/exception';
-import type { PrismaClientDbMain } from '@your-org/db-main-prisma';
-import { assertIsPresent, type UnPromisify } from '@your-org/ts-utils';
 
 export type GetPosts = UnPromisify<
   ReturnType<(typeof PostRepositorySsr)['prototype']['getPosts']>

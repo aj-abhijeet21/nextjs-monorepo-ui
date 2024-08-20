@@ -1,5 +1,8 @@
+import {
+  isNonEmptyString,
+  isParsableNumeric,
+} from '@ajabhijeet21-internal/ts-utils';
 import { test, expect } from '@playwright/test';
-import { isNonEmptyString, isParsableNumeric } from '@your-org/ts-utils';
 
 test('should call the getUser graphql endpoint', async ({ request }) => {
   const resp = await request.post('/api/graphql', {

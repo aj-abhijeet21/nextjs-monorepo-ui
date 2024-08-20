@@ -1,7 +1,7 @@
+import type { DbMainPothosTypes } from '@ajabhijeet21-internal/db-main-prisma';
 import SchemaBuilder from '@pothos/core';
 import PluginErrors from '@pothos/plugin-errors';
 import PluginPrisma from '@pothos/plugin-prisma';
-import type { DbMainPothosTypes } from '@your-org/db-main-prisma';
 import { prismaDbMain } from '@/server/config';
 
 const builder = new SchemaBuilder<{

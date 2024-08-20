@@ -1,3 +1,3 @@
 export const sayHello = (name: string): string => {
-  return `I'm the @your-org/ui-lib component telling ${name} !`;
+  return `I'm the @ajabhijeet21-internal/ui-lib component telling ${name} !`;
 };

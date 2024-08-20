@@ -3,12 +3,13 @@ name: ReleaseOrVersionPR
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   release:
     # Basic security: the release job can only be executed from this repo and from the main branch (not a remote thing)
-    if: ${{ github.repository == 'belgattitude/nextjs-monorepo-example' && contains('refs/heads/main',github.ref)}}
-    name: Release and changelog
+    if: ${{ github.repository == 'aj-abhijeet21/nextjs-monorepo-ui' && contains('refs/heads/main',github.ref)}}
+    name: 🚀 Release and changelog
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -22,9 +23,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20.x
+          token: ${{ secrets.GITHUB_TOKEN }}
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@ajabhijeet21-internal'
 
       - name: 📥 Monorepo install
         uses: ./.github/actions/yarn-nm-install
+
+      - name: Build monorepo
+        run: |
+          yarn g:build
+          cat .npmrc
+          ls -R packages/*/dist
 
       # @link https://github.com/changesets/action
       - name: 🦋 Create Release Pull Request or Publish to npm
@@ -33,7 +43,10 @@ jobs:
         with:
           # publish: yarn g:release
           cwd: ${{ github.workspace }}
-          title: '[Release] Version packages'
+          title: 'chore(release): version packages 🦋'
+          commit: 'chore(release): version packages 🦋'
+          publish: yarn publish:packages
+          version: yarn version:packages
           # Optional, might be used in conjunction with GITHUB_TOKEN to
           # allow running the workflows on a Version package action.
           # Be aware of security implications.

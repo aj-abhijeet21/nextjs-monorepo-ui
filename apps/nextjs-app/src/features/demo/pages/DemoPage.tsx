@@ -1,5 +1,5 @@
-import { sayHello } from '@your-org/core-lib';
-import { AsyncMessage, Message } from '@your-org/ui-lib';
+import { sayHello } from '@ajabhijeet21-internal/core-lib';
+import { AsyncMessage, Button, Message } from '@ajabhijeet21-internal/ui-lib';
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
 import { NextSeo } from 'next-seo';
@@ -16,31 +16,15 @@ export const DemoPage: FC = () => {
     <>
       <NextSeo
         title={t('demo:page.title')}
-        description="Web-app nextjs monorepo example, https://github.com/belgattitude/nextjs-monorepo-example"
+        description="Web-app nextjs monorepo example, https://github.com/aj-abhijeet21/nextjs-monorepo-ui"
       />
       <MainLayout>
-        <Banner />
-        <h3>I'm the web-app</h3>
-        <Jumbotron />
-        <ul>
-          <li>{`Foo says: ${sayHello('World')} from @your-org/core-lib`}</li>
-          <li>
-            <Message message={'Bar react component from @your-org/ui-lib'} />
-          </li>
-          <li>
-            <AsyncMessage apiUrl={'/api/hello'} />
-          </li>
-        </ul>
-        <Image
-          src={'/images/nextjs-logo.png'}
-          alt={'logo'}
-          width={400}
-          height={240}
-        />
-        <div className={'pt-8'} />
-        <DemoMuiBlock />
-        <div className={'pt-8'} />
-        <PoetryBlock />
+        <div className="flex h-screen flex-col items-center justify-center gap-8">
+          <Jumbotron />
+          <Button variant={'destructive'} className="bg-red-600">
+            Explore now
+          </Button>
+        </div>
       </MainLayout>
     </>
   );

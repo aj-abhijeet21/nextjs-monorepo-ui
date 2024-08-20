@@ -12,6 +12,252 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ajabhijeet21-internal/common-i18n@workspace:^, @ajabhijeet21-internal/common-i18n@workspace:packages/common-i18n":
+  version: 0.0.0-use.local
+  resolution: "@ajabhijeet21-internal/common-i18n@workspace:packages/common-i18n"
+  dependencies:
+    "@ajabhijeet21-internal/eslint-config-bases": "workspace:^"
+    "@types/node": "npm:22.4.1"
+    cross-env: "npm:7.0.3"
+    eslint: "npm:8.57.0"
+    prettier: "npm:3.3.3"
+    rimraf: "npm:6.0.1"
+    typescript: "npm:5.5.4"
+  languageName: unknown
+  linkType: soft
+
+"@ajabhijeet21-internal/core-lib@workspace:^, @ajabhijeet21-internal/core-lib@workspace:packages/core-lib":
+  version: 0.0.0-use.local
+  resolution: "@ajabhijeet21-internal/core-lib@workspace:packages/core-lib"
+  dependencies:
+    "@ajabhijeet21-internal/eslint-config-bases": "workspace:^"
+    "@ajabhijeet21-internal/ts-utils": "workspace:^"
+    "@testing-library/dom": "npm:10.4.0"
+    "@testing-library/react": "npm:16.0.0"
+    "@testing-library/user-event": "npm:14.5.2"
+    "@types/node": "npm:22.4.1"
+    "@types/react": "npm:18.3.3"
+    "@types/react-dom": "npm:18.3.0"
+    "@vitejs/plugin-react": "npm:4.3.1"
+    "@vitest/coverage-v8": "npm:2.0.5"
+    "@vitest/ui": "npm:2.0.5"
+    cross-env: "npm:7.0.3"
+    dequal: "npm:^2.0.3"
+    eslint: "npm:8.57.0"
+    npm-run-all2: "npm:6.2.2"
+    prettier: "npm:3.3.3"
+    react: "npm:18.3.1"
+    react-dom: "npm:18.3.1"
+    rimraf: "npm:6.0.1"
+    tsup: "npm:8.2.4"
+    typescript: "npm:5.5.4"
+    vite: "npm:5.4.1"
+    vite-tsconfig-paths: "npm:5.0.1"
+    vitest: "npm:2.0.5"
+  peerDependencies:
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  languageName: unknown
+  linkType: soft
+
+"@ajabhijeet21-internal/db-main-prisma@workspace:^, @ajabhijeet21-internal/db-main-prisma@workspace:packages/db-main-prisma":
+  version: 0.0.0-use.local
+  resolution: "@ajabhijeet21-internal/db-main-prisma@workspace:packages/db-main-prisma"
+  dependencies:
+    "@ajabhijeet21-internal/eslint-config-bases": "workspace:^"
+    "@pothos/core": "npm:3.41.2"
+    "@pothos/plugin-prisma": "npm:3.65.3"
+    "@prisma/client": "npm:5.18.0"
+    "@soluble/dsn-parser": "npm:1.9.2"
+    "@types/node": "npm:22.4.1"
+    "@vitest/coverage-v8": "npm:2.0.5"
+    "@vitest/ui": "npm:2.0.5"
+    camelcase: "npm:8.0.0"
+    cross-env: "npm:7.0.3"
+    dotenv-flow: "npm:4.1.0"
+    dotenv-flow-cli: "npm:1.1.1"
+    eslint: "npm:8.57.0"
+    execa: "npm:9.3.1"
+    graphql: "npm:16.9.0"
+    is-port-reachable: "npm:4.0.0"
+    keyword-extractor: "npm:0.0.28"
+    npm-run-all2: "npm:6.2.2"
+    picocolors: "npm:1.0.1"
+    prettier: "npm:3.3.3"
+    prisma: "npm:5.18.0"
+    rimraf: "npm:6.0.1"
+    transliteration: "npm:2.3.5"
+    tsup: "npm:8.2.4"
+    tsx: "npm:4.17.0"
+    typescript: "npm:5.5.4"
+    vite: "npm:5.4.1"
+    vite-tsconfig-paths: "npm:5.0.1"
+    vitest: "npm:2.0.5"
+  peerDependencies:
+    "@pothos/plugin-prisma": ^3.41.0
+    "@prisma/client": ^5.0.0
+    graphql: ^16.9.0
+  languageName: unknown
+  linkType: soft
+
+"@ajabhijeet21-internal/eslint-config-bases@workspace:^, @ajabhijeet21-internal/eslint-config-bases@workspace:packages/eslint-config-bases":
+  version: 0.0.0-use.local
+  resolution: "@ajabhijeet21-internal/eslint-config-bases@workspace:packages/eslint-config-bases"
+  dependencies:
+    "@graphql-eslint/eslint-plugin": "npm:3.20.1"
+    "@rushstack/eslint-patch": "npm:^1.10.4"
+    "@tanstack/eslint-plugin-query": "npm:^5.51.15"
+    "@testing-library/dom": "npm:10.4.0"
+    "@testing-library/react": "npm:16.0.0"
+    "@types/node": "npm:22.4.1"
+    "@types/react": "npm:18.3.3"
+    "@types/react-dom": "npm:18.3.0"
+    "@typescript-eslint/eslint-plugin": "npm:^7.17.0"
+    "@typescript-eslint/parser": "npm:^7.17.0"
+    es-check: "npm:7.2.1"
+    eslint: "npm:8.57.0"
+    eslint-config-prettier: "npm:^9.1.0"
+    eslint-import-resolver-typescript: "npm:^3.6.1"
+    eslint-plugin-import: "npm:^2.29.1"
+    eslint-plugin-jest: "npm:^28.8.0"
+    eslint-plugin-jest-formatting: "npm:^3.1.0"
+    eslint-plugin-jsx-a11y: "npm:^6.9.0"
+    eslint-plugin-mdx: "npm:3.1.5"
+    eslint-plugin-playwright: "npm:^1.6.2"
+    eslint-plugin-prettier: "npm:^5.2.1"
+    eslint-plugin-react: "npm:^7.35.0"
+    eslint-plugin-react-hooks: "npm:^4.6.2 || 5.0.0-canary-7118f5dd7-20230705"
+    eslint-plugin-regexp: "npm:^2.6.0"
+    eslint-plugin-sonarjs: "npm:^0.25.1"
+    eslint-plugin-storybook: "npm:^0.8.0"
+    eslint-plugin-tailwindcss: "npm:3.17.4"
+    eslint-plugin-testing-library: "npm:^6.3.0"
+    graphql: "npm:16.9.0"
+    react: "npm:18.3.1"
+    react-dom: "npm:18.3.1"
+    rimraf: "npm:6.0.1"
+    tailwindcss: "npm:3.4.10"
+    typescript: "npm:5.5.4"
+  peerDependencies:
+    "@graphql-eslint/eslint-plugin": ^3.14.3
+    eslint: ^8.55.0
+    eslint-plugin-mdx: ^2.2.0 || ^3.0.0
+    eslint-plugin-tailwindcss: ^3.13.0
+    graphql: ^16.8.0
+    prettier: ^3.0.0
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    typescript: ^5.1.6
+  peerDependenciesMeta:
+    "@graphql-eslint/eslint-plugin":
+      optional: true
+    eslint-plugin-mdx:
+      optional: true
+    eslint-plugin-tailwindcss:
+      optional: true
+    graphql:
+      optional: true
+    prettier:
+      optional: true
+    react:
+      optional: true
+    react-dom:
+      optional: true
+    tailwindcss:
+      optional: true
+    typescript:
+      optional: true
+  languageName: unknown
+  linkType: soft
+
+"@ajabhijeet21-internal/ts-utils@workspace:^, @ajabhijeet21-internal/ts-utils@workspace:packages/ts-utils":
+  version: 0.0.0-use.local
+  resolution: "@ajabhijeet21-internal/ts-utils@workspace:packages/ts-utils"
+  dependencies:
+    "@ajabhijeet21-internal/eslint-config-bases": "workspace:^"
+    "@size-limit/file": "npm:11.1.4"
+    "@types/node": "npm:22.4.1"
+    "@vitest/coverage-v8": "npm:2.0.5"
+    cross-env: "npm:7.0.3"
+    es-check: "npm:7.2.1"
+    eslint: "npm:8.57.0"
+    get-tsconfig: "npm:4.7.6"
+    prettier: "npm:3.3.3"
+    rimraf: "npm:6.0.1"
+    size-limit: "npm:11.1.4"
+    tslib: "npm:2.6.3"
+    tsup: "npm:8.2.4"
+    typescript: "npm:5.5.4"
+    vite: "npm:5.4.1"
+    vite-tsconfig-paths: "npm:5.0.1"
+    vitest: "npm:2.0.5"
+  languageName: unknown
+  linkType: soft
+
+"@ajabhijeet21-internal/ui-lib@workspace:^, @ajabhijeet21-internal/ui-lib@workspace:packages/ui-lib":
+  version: 0.0.0-use.local
+  resolution: "@ajabhijeet21-internal/ui-lib@workspace:packages/ui-lib"
+  dependencies:
+    "@ajabhijeet21-internal/eslint-config-bases": "workspace:^"
+    "@ajabhijeet21-internal/ts-utils": "workspace:^"
+    "@emotion/react": "npm:11.13.0"
+    "@emotion/styled": "npm:11.13.0"
+    "@radix-ui/react-slot": "npm:1.1.0"
+    "@storybook/addon-essentials": "npm:8.2.9"
+    "@storybook/addon-interactions": "npm:8.2.9"
+    "@storybook/addon-links": "npm:8.2.9"
+    "@storybook/blocks": "npm:8.2.9"
+    "@storybook/react": "npm:8.2.9"
+    "@storybook/react-vite": "npm:8.2.9"
+    "@storybook/test": "npm:8.2.9"
+    "@tailwindcss/forms": "npm:0.5.7"
+    "@testing-library/dom": "npm:10.4.0"
+    "@testing-library/jest-dom": "npm:6.4.8"
+    "@testing-library/react": "npm:16.0.0"
+    "@testing-library/user-event": "npm:14.5.2"
+    "@types/node": "npm:22.4.1"
+    "@types/react": "npm:18.3.3"
+    "@types/react-dom": "npm:18.3.0"
+    "@vitejs/plugin-react-swc": "npm:3.7.0"
+    "@vitest/coverage-v8": "npm:2.0.5"
+    autoprefixer: "npm:10.4.20"
+    class-variance-authority: "npm:0.7.0"
+    clsx: "npm:2.1.1"
+    cross-env: "npm:7.0.3"
+    eslint: "npm:8.57.0"
+    eslint-plugin-tailwindcss: "npm:3.17.4"
+    npm-run-all2: "npm:6.2.2"
+    postcss: "npm:8.4.41"
+    prettier: "npm:3.3.3"
+    react: "npm:18.3.1"
+    react-dom: "npm:18.3.1"
+    require-from-string: "npm:2.0.2"
+    rimraf: "npm:6.0.1"
+    rooks: "npm:7.14.1"
+    sirv: "npm:2.0.4"
+    sirv-cli: "npm:2.0.2"
+    storybook: "npm:8.2.9"
+    tailwindcss: "npm:3.4.10"
+    tsup: "npm:8.2.4"
+    typescript: "npm:5.5.4"
+    vite: "npm:5.4.1"
+    vite-tsconfig-paths: "npm:5.0.1"
+    vitest: "npm:2.0.5"
+  peerDependencies:
+    "@emotion/react": ^11.10.8
+    "@emotion/styled": ^11.10.8
+    "@types/react": ^18.2.11
+    "@types/react-dom": ^18.2.4
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    "@types/react-dom":
+      optional: true
+  languageName: unknown
+  linkType: soft
+
 "@alloc/quick-lru@npm:^5.2.0":
   version: 5.2.0
   resolution: "@alloc/quick-lru@npm:5.2.0"
@@ -4937,6 +5183,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@radix-ui/react-compose-refs@npm:1.1.0":
+  version: 1.1.0
+  resolution: "@radix-ui/react-compose-refs@npm:1.1.0"
+  peerDependencies:
+    "@types/react": "*"
+    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 10c0/7e18706084397d9458ca3473d8565b10691da06f6499a78edbcc4bd72cde08f62e91120658d17d58c19fc39d6b1dffe0133cc4535c8f5fce470abd478f6107e5
+  languageName: node
+  linkType: hard
+
+"@radix-ui/react-slot@npm:1.1.0":
+  version: 1.1.0
+  resolution: "@radix-ui/react-slot@npm:1.1.0"
+  dependencies:
+    "@radix-ui/react-compose-refs": "npm:1.1.0"
+  peerDependencies:
+    "@types/react": "*"
+    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 10c0/a2e8bfb70c440506dd84a1a274f9a8bc433cca37ceae275e53552c9122612e3837744d7fc6f113d6ef1a11491aa914f4add71d76de41cb6d4db72547a8e261ae
+  languageName: node
+  linkType: hard
+
 "@react-aria/focus@npm:^3.17.1":
   version: 3.17.1
   resolution: "@react-aria/focus@npm:3.17.1"
@@ -7729,249 +8003,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@your-org/common-i18n@workspace:^, @your-org/common-i18n@workspace:packages/common-i18n":
-  version: 0.0.0-use.local
-  resolution: "@your-org/common-i18n@workspace:packages/common-i18n"
-  dependencies:
-    "@types/node": "npm:22.4.1"
-    "@your-org/eslint-config-bases": "workspace:^"
-    cross-env: "npm:7.0.3"
-    eslint: "npm:8.57.0"
-    prettier: "npm:3.3.3"
-    rimraf: "npm:6.0.1"
-    typescript: "npm:5.5.4"
-  languageName: unknown
-  linkType: soft
-
-"@your-org/core-lib@workspace:^, @your-org/core-lib@workspace:packages/core-lib":
-  version: 0.0.0-use.local
-  resolution: "@your-org/core-lib@workspace:packages/core-lib"
-  dependencies:
-    "@testing-library/dom": "npm:10.4.0"
-    "@testing-library/react": "npm:16.0.0"
-    "@testing-library/user-event": "npm:14.5.2"
-    "@types/node": "npm:22.4.1"
-    "@types/react": "npm:18.3.3"
-    "@types/react-dom": "npm:18.3.0"
-    "@vitejs/plugin-react": "npm:4.3.1"
-    "@vitest/coverage-v8": "npm:2.0.5"
-    "@vitest/ui": "npm:2.0.5"
-    "@your-org/eslint-config-bases": "workspace:^"
-    "@your-org/ts-utils": "workspace:^"
-    cross-env: "npm:7.0.3"
-    dequal: "npm:^2.0.3"
-    eslint: "npm:8.57.0"
-    npm-run-all2: "npm:6.2.2"
-    prettier: "npm:3.3.3"
-    react: "npm:18.3.1"
-    react-dom: "npm:18.3.1"
-    rimraf: "npm:6.0.1"
-    tsup: "npm:8.2.4"
-    typescript: "npm:5.5.4"
-    vite: "npm:5.4.1"
-    vite-tsconfig-paths: "npm:5.0.1"
-    vitest: "npm:2.0.5"
-  peerDependencies:
-    react: ^18.2.0
-    react-dom: ^18.2.0
-  languageName: unknown
-  linkType: soft
-
-"@your-org/db-main-prisma@workspace:^, @your-org/db-main-prisma@workspace:packages/db-main-prisma":
-  version: 0.0.0-use.local
-  resolution: "@your-org/db-main-prisma@workspace:packages/db-main-prisma"
-  dependencies:
-    "@pothos/core": "npm:3.41.2"
-    "@pothos/plugin-prisma": "npm:3.65.3"
-    "@prisma/client": "npm:5.18.0"
-    "@soluble/dsn-parser": "npm:1.9.2"
-    "@types/node": "npm:22.4.1"
-    "@vitest/coverage-v8": "npm:2.0.5"
-    "@vitest/ui": "npm:2.0.5"
-    "@your-org/eslint-config-bases": "workspace:^"
-    camelcase: "npm:8.0.0"
-    cross-env: "npm:7.0.3"
-    dotenv-flow: "npm:4.1.0"
-    dotenv-flow-cli: "npm:1.1.1"
-    eslint: "npm:8.57.0"
-    execa: "npm:9.3.1"
-    graphql: "npm:16.9.0"
-    is-port-reachable: "npm:4.0.0"
-    keyword-extractor: "npm:0.0.28"
-    npm-run-all2: "npm:6.2.2"
-    picocolors: "npm:1.0.1"
-    prettier: "npm:3.3.3"
-    prisma: "npm:5.18.0"
-    rimraf: "npm:6.0.1"
-    transliteration: "npm:2.3.5"
-    tsup: "npm:8.2.4"
-    tsx: "npm:4.17.0"
-    typescript: "npm:5.5.4"
-    vite: "npm:5.4.1"
-    vite-tsconfig-paths: "npm:5.0.1"
-    vitest: "npm:2.0.5"
-  peerDependencies:
-    "@pothos/plugin-prisma": ^3.41.0
-    "@prisma/client": ^5.0.0
-    graphql: ^16.9.0
-  languageName: unknown
-  linkType: soft
-
-"@your-org/eslint-config-bases@workspace:^, @your-org/eslint-config-bases@workspace:packages/eslint-config-bases":
-  version: 0.0.0-use.local
-  resolution: "@your-org/eslint-config-bases@workspace:packages/eslint-config-bases"
-  dependencies:
-    "@graphql-eslint/eslint-plugin": "npm:3.20.1"
-    "@rushstack/eslint-patch": "npm:^1.10.4"
-    "@tanstack/eslint-plugin-query": "npm:^5.51.15"
-    "@testing-library/dom": "npm:10.4.0"
-    "@testing-library/react": "npm:16.0.0"
-    "@types/node": "npm:22.4.1"
-    "@types/react": "npm:18.3.3"
-    "@types/react-dom": "npm:18.3.0"
-    "@typescript-eslint/eslint-plugin": "npm:^7.17.0"
-    "@typescript-eslint/parser": "npm:^7.17.0"
-    es-check: "npm:7.2.1"
-    eslint: "npm:8.57.0"
-    eslint-config-prettier: "npm:^9.1.0"
-    eslint-import-resolver-typescript: "npm:^3.6.1"
-    eslint-plugin-import: "npm:^2.29.1"
-    eslint-plugin-jest: "npm:^28.8.0"
-    eslint-plugin-jest-formatting: "npm:^3.1.0"
-    eslint-plugin-jsx-a11y: "npm:^6.9.0"
-    eslint-plugin-mdx: "npm:3.1.5"
-    eslint-plugin-playwright: "npm:^1.6.2"
-    eslint-plugin-prettier: "npm:^5.2.1"
-    eslint-plugin-react: "npm:^7.35.0"
-    eslint-plugin-react-hooks: "npm:^4.6.2 || 5.0.0-canary-7118f5dd7-20230705"
-    eslint-plugin-regexp: "npm:^2.6.0"
-    eslint-plugin-sonarjs: "npm:^0.25.1"
-    eslint-plugin-storybook: "npm:^0.8.0"
-    eslint-plugin-tailwindcss: "npm:3.17.4"
-    eslint-plugin-testing-library: "npm:^6.3.0"
-    graphql: "npm:16.9.0"
-    react: "npm:18.3.1"
-    react-dom: "npm:18.3.1"
-    rimraf: "npm:6.0.1"
-    tailwindcss: "npm:3.4.10"
-    typescript: "npm:5.5.4"
-  peerDependencies:
-    "@graphql-eslint/eslint-plugin": ^3.14.3
-    eslint: ^8.55.0
-    eslint-plugin-mdx: ^2.2.0 || ^3.0.0
-    eslint-plugin-tailwindcss: ^3.13.0
-    graphql: ^16.8.0
-    prettier: ^3.0.0
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    typescript: ^5.1.6
-  peerDependenciesMeta:
-    "@graphql-eslint/eslint-plugin":
-      optional: true
-    eslint-plugin-mdx:
-      optional: true
-    eslint-plugin-tailwindcss:
-      optional: true
-    graphql:
-      optional: true
-    prettier:
-      optional: true
-    react:
-      optional: true
-    react-dom:
-      optional: true
-    tailwindcss:
-      optional: true
-    typescript:
-      optional: true
-  languageName: unknown
-  linkType: soft
-
-"@your-org/ts-utils@workspace:^, @your-org/ts-utils@workspace:packages/ts-utils":
-  version: 0.0.0-use.local
-  resolution: "@your-org/ts-utils@workspace:packages/ts-utils"
-  dependencies:
-    "@size-limit/file": "npm:11.1.4"
-    "@types/node": "npm:22.4.1"
-    "@vitest/coverage-v8": "npm:2.0.5"
-    "@your-org/eslint-config-bases": "workspace:^"
-    cross-env: "npm:7.0.3"
-    es-check: "npm:7.2.1"
-    eslint: "npm:8.57.0"
-    get-tsconfig: "npm:4.7.6"
-    prettier: "npm:3.3.3"
-    rimraf: "npm:6.0.1"
-    size-limit: "npm:11.1.4"
-    tslib: "npm:2.6.3"
-    tsup: "npm:8.2.4"
-    typescript: "npm:5.5.4"
-    vite: "npm:5.4.1"
-    vite-tsconfig-paths: "npm:5.0.1"
-    vitest: "npm:2.0.5"
-  languageName: unknown
-  linkType: soft
-
-"@your-org/ui-lib@workspace:^, @your-org/ui-lib@workspace:packages/ui-lib":
-  version: 0.0.0-use.local
-  resolution: "@your-org/ui-lib@workspace:packages/ui-lib"
-  dependencies:
-    "@emotion/react": "npm:11.13.0"
-    "@emotion/styled": "npm:11.13.0"
-    "@storybook/addon-essentials": "npm:8.2.9"
-    "@storybook/addon-interactions": "npm:8.2.9"
-    "@storybook/addon-links": "npm:8.2.9"
-    "@storybook/blocks": "npm:8.2.9"
-    "@storybook/react": "npm:8.2.9"
-    "@storybook/react-vite": "npm:8.2.9"
-    "@storybook/test": "npm:8.2.9"
-    "@tailwindcss/forms": "npm:0.5.7"
-    "@testing-library/dom": "npm:10.4.0"
-    "@testing-library/jest-dom": "npm:6.4.8"
-    "@testing-library/react": "npm:16.0.0"
-    "@testing-library/user-event": "npm:14.5.2"
-    "@types/node": "npm:22.4.1"
-    "@types/react": "npm:18.3.3"
-    "@types/react-dom": "npm:18.3.0"
-    "@vitejs/plugin-react-swc": "npm:3.7.0"
-    "@vitest/coverage-v8": "npm:2.0.5"
-    "@your-org/eslint-config-bases": "workspace:^"
-    "@your-org/ts-utils": "workspace:^"
-    autoprefixer: "npm:10.4.20"
-    cross-env: "npm:7.0.3"
-    eslint: "npm:8.57.0"
-    eslint-plugin-tailwindcss: "npm:3.17.4"
-    npm-run-all2: "npm:6.2.2"
-    postcss: "npm:8.4.41"
-    prettier: "npm:3.3.3"
-    react: "npm:18.3.1"
-    react-dom: "npm:18.3.1"
-    require-from-string: "npm:2.0.2"
-    rimraf: "npm:6.0.1"
-    rooks: "npm:7.14.1"
-    sirv: "npm:2.0.4"
-    sirv-cli: "npm:2.0.2"
-    storybook: "npm:8.2.9"
-    tailwindcss: "npm:3.4.10"
-    tsup: "npm:8.2.4"
-    typescript: "npm:5.5.4"
-    vite: "npm:5.4.1"
-    vite-tsconfig-paths: "npm:5.0.1"
-    vitest: "npm:2.0.5"
-  peerDependencies:
-    "@emotion/react": ^11.10.8
-    "@emotion/styled": ^11.10.8
-    "@types/react": ^18.2.11
-    "@types/react-dom": ^18.2.4
-    react: ^18.2.0
-    react-dom: ^18.2.0
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-    "@types/react-dom":
-      optional: true
-  languageName: unknown
-  linkType: soft
-
 "JSONStream@npm:^1.3.5":
   version: 1.3.5
   resolution: "JSONStream@npm:1.3.5"
@@ -9011,6 +9042,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"class-variance-authority@npm:0.7.0":
+  version: 0.7.0
+  resolution: "class-variance-authority@npm:0.7.0"
+  dependencies:
+    clsx: "npm:2.0.0"
+  checksum: 10c0/e11c57edf4bf50ef1c97bae41d68885afbaaedba26c48b7cc5dfb033390fed7012147e9532168d8c4f3497fce4dff15e20e6e60b8c9c9a4b0fe26b0e804513db
+  languageName: node
+  linkType: hard
+
 "clean-stack@npm:^2.0.0":
   version: 2.2.0
   resolution: "clean-stack@npm:2.2.0"
@@ -9095,6 +9135,13 @@ __metadata:
   version: 1.0.4
   resolution: "clone@npm:1.0.4"
   checksum: 10c0/2176952b3649293473999a95d7bebfc9dc96410f6cbd3d2595cf12fd401f63a4bf41a7adbfd3ab2ff09ed60cb9870c58c6acdd18b87767366fabfc163700f13b
+  languageName: node
+  linkType: hard
+
+"clsx@npm:2.0.0":
+  version: 2.0.0
+  resolution: "clsx@npm:2.0.0"
+  checksum: 10c0/c09f43b3144a0b7826b6b11b6a111b2c7440831004eecc02d333533c5e58ef0aa5f2dce071d3b25fbb8c8ea97b45df96c74bcc1d51c8c2027eb981931107b0cd
   languageName: node
   linkType: hard
 
@@ -15234,6 +15281,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nextjs-app@workspace:apps/nextjs-app"
   dependencies:
+    "@ajabhijeet21-internal/common-i18n": "workspace:^"
+    "@ajabhijeet21-internal/core-lib": "workspace:^"
+    "@ajabhijeet21-internal/db-main-prisma": "workspace:^"
+    "@ajabhijeet21-internal/ts-utils": "workspace:^"
+    "@ajabhijeet21-internal/ui-lib": "workspace:^"
     "@emotion/cache": "npm:11.13.1"
     "@emotion/react": "npm:11.13.0"
     "@emotion/server": "npm:11.11.0"
@@ -15287,11 +15339,6 @@ __metadata:
     "@vitejs/plugin-react-swc": "npm:3.7.0"
     "@vitest/coverage-v8": "npm:2.0.5"
     "@vitest/ui": "npm:2.0.5"
-    "@your-org/common-i18n": "workspace:^"
-    "@your-org/core-lib": "workspace:^"
-    "@your-org/db-main-prisma": "workspace:^"
-    "@your-org/ts-utils": "workspace:^"
-    "@your-org/ui-lib": "workspace:^"
     autoprefixer: "npm:10.4.20"
     clsx: "npm:2.1.1"
     cors: "npm:2.8.5"
@@ -15350,12 +15397,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nextjs-monorepo-example@workspace:."
   dependencies:
+    "@ajabhijeet21-internal/eslint-config-bases": "workspace:^"
     "@changesets/changelog-github": "npm:0.5.0"
     "@changesets/cli": "npm:2.27.7"
     "@commitlint/cli": "npm:19.4.0"
     "@commitlint/config-conventional": "npm:19.2.2"
     "@types/shell-quote": "npm:1.7.5"
-    "@your-org/eslint-config-bases": "workspace:^"
     cross-env: "npm:7.0.3"
     eslint: "npm:8.57.0"
     husky: "npm:9.1.5"
@@ -20259,6 +20306,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "vite-app@workspace:apps/vite-app"
   dependencies:
+    "@ajabhijeet21-internal/common-i18n": "workspace:^"
+    "@ajabhijeet21-internal/core-lib": "workspace:^"
+    "@ajabhijeet21-internal/eslint-config-bases": "workspace:^"
+    "@ajabhijeet21-internal/ui-lib": "workspace:^"
     "@babel/core": "npm:7.25.2"
     "@emotion/react": "npm:11.13.0"
     "@emotion/styled": "npm:11.13.0"
@@ -20267,10 +20318,6 @@ __metadata:
     "@vitejs/plugin-react": "npm:4.3.1"
     "@vitest/coverage-v8": "npm:2.0.5"
     "@vitest/ui": "npm:2.0.5"
-    "@your-org/common-i18n": "workspace:^"
-    "@your-org/core-lib": "workspace:^"
-    "@your-org/eslint-config-bases": "workspace:^"
-    "@your-org/ui-lib": "workspace:^"
     eslint: "npm:8.57.0"
     eslint-plugin-tailwindcss: "npm:3.17.4"
     happy-dom: "npm:14.12.3"

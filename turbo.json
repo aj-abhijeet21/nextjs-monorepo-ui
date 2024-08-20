@@ -18,9 +18,13 @@
       "outputs": ["dist/**"]
     },
     "test": {},
+    "dev": {
+      "cache": false
+    },
     "test-unit": {},
     "lint": {
-      "env": ["TIMING"]
+      "env": ["TIMING"],
+      "outputs": []
     },
     "lint-styles": {},
     "typecheck": {},

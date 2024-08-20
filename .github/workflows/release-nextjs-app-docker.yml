@@ -36,7 +36,7 @@ permissions:
 jobs:
   docker:
     # Best practice for security (disabled for example, convenient for tools like renovate, dependabot, etc.)
-    # if: ${{ github.repository == 'belgattitude/nextjs-monorepo-example' && contains('refs/heads/main',github.ref)}}
+    # if: ${{ github.repository == 'abhijeet21/nextjs-monorepo-ui' && contains('refs/heads/main',github.ref)}}
     runs-on: ubuntu-latest
     name: Nextjs-app docker build
     defaults:

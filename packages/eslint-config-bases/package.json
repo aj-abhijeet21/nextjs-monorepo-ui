@@ -1,5 +1,5 @@
 {
-  "name": "@your-org/eslint-config-bases",
+  "name": "@ajabhijeet21-internal/eslint-config-bases",
   "version": "1.5.4",
   "private": true,
   "type": "commonjs",

@@ -1,5 +1,5 @@
 // To test out support for emotion-11/styled in storybook
-import { isNonEmptyString } from '@your-org/ts-utils';
+import { isNonEmptyString } from '@ajabhijeet21-internal/ts-utils';
 import type { FC } from 'react';
 import * as S from './BasicCard.styles';
 

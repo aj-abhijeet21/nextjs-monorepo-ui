@@ -1,6 +1,6 @@
+import systemJsonEn from '@ajabhijeet21-internal/common-i18n/locales/en/system.json' assert { type: 'json' };
+import systemJsonFr from '@ajabhijeet21-internal/common-i18n/locales/fr/system.json' assert { type: 'json' };
 import { test, expect } from '@playwright/test';
-import systemJsonEn from '@your-org/common-i18n/locales/en/system.json' assert { type: 'json' };
-import systemJsonFr from '@your-org/common-i18n/locales/fr/system.json' assert { type: 'json' };
 
 const pageSlug = 'this-page-does-not-exist';
 

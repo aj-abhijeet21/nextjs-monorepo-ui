@@ -1,17 +1,17 @@
 # The web-app
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/belgattitude/nextjs-monorepo-example/ci-nextjs-app.yml?style=for-the-badge&label=CI)
-![GitHub Workflow E2E Status](https://img.shields.io/github/actions/workflow/status/belgattitude/nextjs-monorepo-example/ci-e2e-nextjs-app.yml?style=for-the-badge&label=E2E)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/abhijeet21/nextjs-monorepo-ui/ci-nextjs-app.yml?style=for-the-badge&label=CI)
+![GitHub Workflow E2E Status](https://img.shields.io/github/actions/workflow/status/abhijeet21/nextjs-monorepo-ui/ci-e2e-nextjs-app.yml?style=for-the-badge&label=E2E)
 
 ## Intro
 
-Basic demo of a nextjs app, part of the [nextjs-monorepo-example](https://github.com/belgattitude/nextjs-monorepo-example).
+Basic demo of a nextjs app, part of the [nextjs-monorepo-example](https://github.com/aj-abhijeet21/nextjs-monorepo-ui).
 
 - Home: [Demo/Vercel](https://monorepo-nextjs-app.vercel.app)
 - SSR-I18n: [Demo/Vercel english](https://monorepo-nextjs-app.vercel.app/en/home) | [Demo/vercel french](https://monorepo-nextjs-app.vercel.app/fr/home)
 - REST API: [Demo rest/Vercel](https://monorepo-nextjs-app.vercel.app/api/rest/post/1)
 - GRAPHIQL (pothos): [Demo/Vercel](https://monorepo-nextjs-app.vercel.app/api/graphql)
-- [Changelog](https://github.com/belgattitude/monorepo-nextjs-app/blob/main/apps/nextjs-app/CHANGELOG.md)
+- [Changelog](https://github.com/aj-abhijeet21/monorepo-nextjs-app/blob/main/apps/nextjs-app/CHANGELOG.md)
 
 ## Quick start
 
@@ -29,7 +29,7 @@ For rest/api database access be sure to start
 docker-compose up main-db
 ```
 
-To create the database and seed it: see the [@your-org/db-main-prisma README](https://github.com/belgattitude/nextjs-monorepo-example/blob/main/packages/db-main-prisma/README.md).
+To create the database and seed it: see the [@ajabhijeet21-internal/db-main-prisma README](https://github.com/aj-abhijeet21/nextjs-monorepo-ui/blob/main/packages/db-main-prisma/README.md).
 
 ### Features
 
@@ -46,14 +46,14 @@ To create the database and seed it: see the [@your-org/db-main-prisma README](ht
 
 ### Monorepo deps
 
-This app relies on packages in the monorepo, see detailed instructions in [README.md](https://github.com/belgattitude/nextjs-monorepo-example)
+This app relies on packages in the monorepo, see detailed instructions in [README.md](https://github.com/aj-abhijeet21/nextjs-monorepo-ui)
 
 ```json5
 {
   dependencies: {
-    "@your-org/core-lib": "workspace:*",
-    "@your-org/db-main-prisma": "workspace:*",
-    "@your-org/ui-lib": "workspace:*",
+    "@ajabhijeet21-internal/core-lib": "workspace:*",
+    "@ajabhijeet21-internal/db-main-prisma": "workspace:*",
+    "@ajabhijeet21-internal/ui-lib": "workspace:*",
   },
 }
 ```
@@ -65,12 +65,16 @@ And their counterparts in [tsconfig.json](./tsconfig.json)
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "@your-org/ui-lib/*": ["../../../packages/ui-lib/src/*"],
-      "@your-org/ui-lib": ["../../../packages/ui-lib/src/index"],
-      "@your-org/core-lib/*": ["../../../packages/core-lib/src/*"],
-      "@your-org/core-lib": ["../../../packages/core-lib/src/index"],
-      "@your-org/db-main-prisma/*": ["../../../packages/db-main-prisma/src/*"],
-      "@your-org/db-main-prisma": [
+      "@ajabhijeet21-internal/ui-lib/*": ["../../../packages/ui-lib/src/*"],
+      "@ajabhijeet21-internal/ui-lib": ["../../../packages/ui-lib/src/index"],
+      "@ajabhijeet21-internal/core-lib/*": ["../../../packages/core-lib/src/*"],
+      "@ajabhijeet21-internal/core-lib": [
+        "../../../packages/core-lib/src/index",
+      ],
+      "@ajabhijeet21-internal/db-main-prisma/*": [
+        "../../../packages/db-main-prisma/src/*",
+      ],
+      "@ajabhijeet21-internal/db-main-prisma": [
         "../../../packages/db-main-prisma/src/index",
       ],
     },

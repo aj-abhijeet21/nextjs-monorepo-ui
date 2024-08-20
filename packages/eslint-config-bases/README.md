@@ -1,11 +1,11 @@
-# @your-org/eslint-config-bases
+# @ajabhijeet21-internal/eslint-config-bases
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/belgattitude/nextjs-monorepo-example/ci-packages.yml?style=for-the-badge&label=CI)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/abhijeet21/nextjs-monorepo-ui/ci-packages.yml?style=for-the-badge&label=CI)
 
 # About
 
 Example of composable eslint config bases that can be easily shared and fine-tuned by apps and
-packages that lives in a [monorepo](https://github.com/belgattitude/nextjs-monorepo-example).
+packages that lives in a [monorepo](https://github.com/aj-abhijeet21/nextjs-monorepo-ui).
 
 ## Features
 
@@ -19,7 +19,7 @@ packages that lives in a [monorepo](https://github.com/belgattitude/nextjs-monor
 Add the following devDependencies to workspace (apps/packages in monorepo) or main project package.json.
 
 ```bash
-$ yarn add --dev eslint @your-org/eslint-config-bases
+$ yarn add --dev eslint @ajabhijeet21-internal/eslint-config-bases
 ```
 
 > PS: To keep the size low, if you use the following plugins:
@@ -40,7 +40,7 @@ file that extends any of the existing base configs. For example:
 
 ```javascript
 // next line only required if you're using a monorepo
-require("@your-org/eslint-config-bases/patch/modern-module-resolution");
+require("@ajabhijeet21-internal/eslint-config-bases/patch/modern-module-resolution");
 
 module.exports = {
   root: true,
@@ -50,19 +50,19 @@ module.exports = {
   },
   ignorePatterns: ["**/node_modules", "**/.cache", "build", ".next"],
   extends: [
-    "@your-org/eslint-config-bases/typescript",
-    "@your-org/eslint-config-bases/sonar",
-    "@your-org/eslint-config-bases/regexp",
-    "@your-org/eslint-config-bases/react",
-    "@your-org/eslint-config-bases/react-query",
-    "@your-org/eslint-config-bases/jest",
-    "@your-org/eslint-config-bases/rtl",
+    "@ajabhijeet21-internal/eslint-config-bases/typescript",
+    "@ajabhijeet21-internal/eslint-config-bases/sonar",
+    "@ajabhijeet21-internal/eslint-config-bases/regexp",
+    "@ajabhijeet21-internal/eslint-config-bases/react",
+    "@ajabhijeet21-internal/eslint-config-bases/react-query",
+    "@ajabhijeet21-internal/eslint-config-bases/jest",
+    "@ajabhijeet21-internal/eslint-config-bases/rtl",
 
-    // "@your-org/eslint-config-bases/mdx",
+    // "@ajabhijeet21-internal/eslint-config-bases/mdx",
 
-    // "@your-org/eslint-config-bases/graphql-schema",
-    // "@your-org/eslint-config-bases/storybook",
-    // "@your-org/eslint-config-bases/playwright",
+    // "@ajabhijeet21-internal/eslint-config-bases/graphql-schema",
+    // "@ajabhijeet21-internal/eslint-config-bases/storybook",
+    // "@ajabhijeet21-internal/eslint-config-bases/playwright",
 
     // Add specific rules for your framework if needed.
     // ie:
@@ -72,10 +72,10 @@ module.exports = {
 
     // Post configure the prettier base and run prettier
     // without conflicts thx to eslint-plugin-prettier
-    "@your-org/eslint-config-bases/prettier-plugin",
+    "@ajabhijeet21-internal/eslint-config-bases/prettier-plugin",
     // Alternatively to the above if you're already running prettier
     // we can get a speed up by using on eslint-prettier-config
-    // "@your-org/eslint-config-bases/prettier-config",
+    // "@ajabhijeet21-internal/eslint-config-bases/prettier-config",
   ],
   rules: {
     // Specific global rules for your app or package
@@ -91,7 +91,7 @@ module.exports = {
 
 > **Tip:**
 >
-> - **Prettier**: `@your-org/eslint-config-bases/prettier-plugin` and `@your-org/eslint-config-bases/prettier-config` are
+> - **Prettier**: `@ajabhijeet21-internal/eslint-config-bases/prettier-plugin` and `@ajabhijeet21-internal/eslint-config-bases/prettier-config` are
 >   mutually exclusives. Choose one. The `prettier-config` suppose that you run prettier independently. The `prettier-plugin`
 >   will run prettier for you. Easiest the `prettier-plugin`, fastest `prettier-config` (this mostly depends
 >   if you set up and persist caches as well)
@@ -140,8 +140,8 @@ to the extended rules.
 
 Two ways to work with prettier.
 
-- `@your-org/eslint-config-bases/prettier-plugin` - eslint will run prettier under the hood
-- `@your-org/eslint-config-bases/prettier-config` - eslint will just disable some conflicting rules (so you'll need to run prettier after)
+- `@ajabhijeet21-internal/eslint-config-bases/prettier-plugin` - eslint will run prettier under the hood
+- `@ajabhijeet21-internal/eslint-config-bases/prettier-config` - eslint will just disable some conflicting rules (so you'll need to run prettier after)
 
 The first method is recommended for simplicity. For best perf use the cache option to run eslint.
 
@@ -149,7 +149,9 @@ Tune the behaviour by creating a config in ` .prettierrc.js`
 
 ```javascript
 // @ts-check
-const { getPrettierConfig } = require("@your-org/eslint-config-bases/helpers");
+const {
+  getPrettierConfig,
+} = require("@ajabhijeet21-internal/eslint-config-bases/helpers");
 
 /**
  * @type {import('prettier').Config}

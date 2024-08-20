@@ -1,31 +1,31 @@
 <div align="center">
-  <h1 align="center"><a aria-label="NextJs Monorepo" href="https://github.com/belgattitude/nextjs-monorepo-example">NextJs Monorepo</a></h1>
+  <h1 align="center"><a aria-label="NextJs Monorepo" href="https://github.com/aj-abhijeet21/nextjs-monorepo-ui">NextJs Monorepo</a></h1>
   <p align="center"><strong>Monorepo concepts, tips and tricks oriented around NextJs</strong></p>
 </div>
 <p align="center">
-  <a aria-label="Build" href="https://github.com/belgattitude/nextjs-monorepo-example/actions?query=workflow%3ACI">
-    <img alt="GitHub branch checks state" src="https://img.shields.io/github/checks-status/belgattitude/nextjs-monorepo-example/main?label=CI&logo=github&style=flat-square">
+  <a aria-label="Build" href="https://github.com/aj-abhijeet21/nextjs-monorepo-ui/actions?query=workflow%3ACI">
+    <img alt="GitHub branch checks state" src="https://img.shields.io/github/checks-status/abhijeet21/nextjs-monorepo-ui/main?label=CI&logo=github&style=flat-square">
   </a>
-  <a aria-label="Codefactor grade" href=https://www.codefactor.io/repository/github/belgattitude/nextjs-monorepo-example">
-    <img alt="Codefactor" src="https://img.shields.io/codefactor/grade/github/belgattitude/nextjs-monorepo-example?label=Codefactor&logo=codefactor&style=flat-quare&labelColor=000000" />
+  <a aria-label="Codefactor grade" href=https://www.codefactor.io/repository/github/abhijeet21/nextjs-monorepo-ui">
+    <img alt="Codefactor" src="https://img.shields.io/codefactor/grade/github/abhijeet21/nextjs-monorepo-ui?label=Codefactor&logo=codefactor&style=flat-quare&labelColor=000000" />
   </a>
-  <a aria-label="CodeClimate maintainability" href="https://codeclimate.com/github/belgattitude/nextjs-monorepo-example">
-    <img alt="Maintainability" src="https://img.shields.io/codeclimate/maintainability/belgattitude/nextjs-monorepo-example?label=Maintainability&logo=code-climate&style=flat-quare&labelColor=000000" />
+  <a aria-label="CodeClimate maintainability" href="https://codeclimate.com/github/abhijeet21/nextjs-monorepo-ui">
+    <img alt="Maintainability" src="https://img.shields.io/codeclimate/maintainability/abhijeet21/nextjs-monorepo-ui?label=Maintainability&logo=code-climate&style=flat-quare&labelColor=000000" />
   </a>
-  <a aria-label="CodeClimate technical debt" href="https://codeclimate.com/github/belgattitude/nextjs-monorepo-example">
-    <img alt="Techdebt" src="https://img.shields.io/codeclimate/tech-debt/belgattitude/nextjs-monorepo-example?label=TechDebt&logo=code-climate&style=flat-quare&labelColor=000000" />
+  <a aria-label="CodeClimate technical debt" href="https://codeclimate.com/github/abhijeet21/nextjs-monorepo-ui">
+    <img alt="Techdebt" src="https://img.shields.io/codeclimate/tech-debt/abhijeet21/nextjs-monorepo-ui?label=TechDebt&logo=code-climate&style=flat-quare&labelColor=000000" />
   </a>
-  <a aria-label="Codacy grade" href="https://www.codacy.com/gh/belgattitude/nextjs-monorepo-example/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=belgattitude/nextjs-monorepo-example&amp;utm_campaign=Badge_Grade">
+  <a aria-label="Codacy grade" href="https://www.codacy.com/gh/abhijeet21/nextjs-monorepo-ui/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=abhijeet21/nextjs-monorepo-ui&amp;utm_campaign=Badge_Grade">
     <img alt="Codacy grade" src="https://img.shields.io/codacy/grade/dff9c944af284a0fad4e165eb1727467?logo=codacy&style=flat-square&labelColor=000&label=Codacy">
   </a>
   <a aria-label="LoC">  
-    <img alt="LoC" src="https://img.shields.io/tokei/lines/github/belgattitude/nextjs-monorepo-example?style=flat-quare&labelColor=000000" />
+    <img alt="LoC" src="https://img.shields.io/tokei/lines/github/abhijeet21/nextjs-monorepo-ui?style=flat-quare&labelColor=000000" />
   </a>
-  <a aria-label="Top language" href="https://github.com/belgattitude/nextjs-monorepo-example/search?l=typescript">
-    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/belgattitude/nextjs-monorepo-example?style=flat-square&labelColor=000&color=blue">
+  <a aria-label="Top language" href="https://github.com/aj-abhijeet21/nextjs-monorepo-ui/search?l=typescript">
+    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/abhijeet21/nextjs-monorepo-ui?style=flat-square&labelColor=000&color=blue">
   </a>
-  <a aria-label="Licence" href="https://github.com/belgattitude/nextjs-monorepo-example/blob/main/LICENSE">
-    <img alt="Licence" src="https://img.shields.io/github/license/belgattitude/nextjs-monorepo-example?style=flat-quare&labelColor=000000" />
+  <a aria-label="Licence" href="https://github.com/aj-abhijeet21/nextjs-monorepo-ui/blob/main/LICENSE">
+    <img alt="Licence" src="https://img.shields.io/github/license/abhijeet21/nextjs-monorepo-ui?style=flat-quare&labelColor=000000" />
   </a>
 </p>
 
@@ -87,7 +87,7 @@ yarn install
 
 ## Structure
 
-[![Open in Gitpod](https://img.shields.io/badge/Open%20In-Gitpod.io-%231966D2?style=for-the-badge&logo=gitpod)](https://gitpod.io/#https://github.com/belgattitude/nextjs-monorepo-example)
+[![Open in Gitpod](https://img.shields.io/badge/Open%20In-Gitpod.io-%231966D2?style=for-the-badge&logo=gitpod)](https://gitpod.io/#https://github.com/aj-abhijeet21/nextjs-monorepo-ui)
 
 ```
 .
@@ -232,7 +232,7 @@ Initialize a package.json with the name of your package.
 
 ```json5
 {
-  "name": "@your-org/magnificent-poney",
+  "name": "@ajabhijeet21-internal/magnificent-poney",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -245,7 +245,7 @@ Initialize a package.json with the name of your package.
     "fix:all-files": "eslint . --ext .ts,.tsx,.js,.jsx --fix",
   },
   "devDependencies": {
-    "@your-org/eslint-config-bases": "workspace:^",
+    "@ajabhijeet21-internal/eslint-config-bases": "workspace:^",
   },
 }
 ```
@@ -262,7 +262,7 @@ yarn and pnpm.
 
 ```bash
 cd apps/my-app
-yarn add @your-org/magnificent-poney@'workspace:^'
+yarn add @ajabhijeet21-internal/magnificent-poney@'workspace:^'
 ```
 
 Inspiration can be found in [apps/nextjs-app/package.json](./apps/nextjs-app/package.json).
@@ -274,7 +274,7 @@ Inspiration can be found in [apps/nextjs-app/package.json](./apps/nextjs-app/pac
 {
   "name": "my-app",
   "dependencies": {
-    "@your-org/magnificient-poney": "workspace:^",
+    "@ajabhijeet21-internal/magnificient-poney": "workspace:^",
   },
 }
 ```
@@ -299,10 +299,10 @@ Inspiration can be found in [apps/nextjs-app/tsconfig.json](./apps/nextjs-app/ts
       // regular app aliases
       "@/components/*": ["./components/*"],
       // packages aliases, relative to app_directory/baseUrl
-      "@your-org/magnificent-poney/*": [
+      "@ajabhijeet21-internal/magnificent-poney/*": [
         "../../../packages/magnificent-poney/src/*",
       ],
-      "@your-org/magnificent-poney": [
+      "@ajabhijeet21-internal/magnificent-poney": [
         "../../../packages/magnificent-poney/src/index",
       ],
     },
@@ -314,7 +314,7 @@ Inspiration can be found in [apps/nextjs-app/tsconfig.json](./apps/nextjs-app/ts
 >
 > - Don't try to set aliases in the global tsonfig.base.json to keep strict with
 >   graph dependencies.
-> - The **star** in `@your-org/magnificent-poney/*` allows you to import subfolders. If you use
+> - The **star** in `@ajabhijeet21-internal/magnificent-poney/*` allows you to import subfolders. If you use
 >   a barrel file (index.ts), the alias with star can be removed.
 
 </details>
@@ -367,7 +367,7 @@ const nextConfig = {
 
 #### Step 3.4: Using the package
 
-The packages are now linked to your app, just import them like regular packages: `import { poney } from '@your-org/magnificent-poney'`.
+The packages are now linked to your app, just import them like regular packages: `import { poney } from '@ajabhijeet21-internal/magnificent-poney'`.
 
 ### 4. Publishing
 
