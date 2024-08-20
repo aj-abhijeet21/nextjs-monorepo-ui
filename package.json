@@ -26,7 +26,7 @@
     "clean:turbo": "turbo clean && rimraf --glob '**/.turbo' '**/turbo-*.log'",
     "deps:check": "npx npm-check-updates@latest --configFileName .ncurc.yml --workspaces --root --mergeConfig",
     "deps:update": "npx npm-check-updates@latest --configFileName .ncurc.yml -u --workspaces --root --mergeConfig",
-    "g:build": "turbo run build",
+    "g:build": "turbo run build --cache-dir=.cache/turbo",
     "g:dev": "turbo run dev",
     "g:changeset": "changeset",
     "g:check-dist": "turbo run check-dist",

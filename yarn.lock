@@ -202,7 +202,7 @@ __metadata:
     "@ajabhijeet21-internal/ts-utils": "workspace:^"
     "@emotion/react": "npm:11.13.0"
     "@emotion/styled": "npm:11.13.0"
-    "@radix-ui/react-slot": "npm:1.1.0"
+    "@radix-ui/react-slot": "npm:^1.1.0"
     "@storybook/addon-essentials": "npm:8.2.9"
     "@storybook/addon-interactions": "npm:8.2.9"
     "@storybook/addon-links": "npm:8.2.9"
@@ -221,8 +221,8 @@ __metadata:
     "@vitejs/plugin-react-swc": "npm:3.7.0"
     "@vitest/coverage-v8": "npm:2.0.5"
     autoprefixer: "npm:10.4.20"
-    class-variance-authority: "npm:0.7.0"
-    clsx: "npm:2.1.1"
+    class-variance-authority: "npm:^0.7.0"
+    clsx: "npm:^2.1.1"
     cross-env: "npm:7.0.3"
     eslint: "npm:8.57.0"
     eslint-plugin-tailwindcss: "npm:3.17.4"
@@ -5196,7 +5196,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/react-slot@npm:1.1.0":
+"@radix-ui/react-slot@npm:^1.1.0":
   version: 1.1.0
   resolution: "@radix-ui/react-slot@npm:1.1.0"
   dependencies:
@@ -9042,7 +9042,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"class-variance-authority@npm:0.7.0":
+"class-variance-authority@npm:^0.7.0":
   version: 0.7.0
   resolution: "class-variance-authority@npm:0.7.0"
   dependencies:

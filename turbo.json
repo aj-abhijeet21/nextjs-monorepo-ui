@@ -10,9 +10,9 @@
       "outputs": ["src/generated/**"]
     },
     "build": {
-      "outputs": ["dist/**"]
+      "outputs": ["dist/**"],
       // This repo example relies on tsconfig paths to ease starting
-      // "dependsOn": ["^build"]
+      "dependsOn": ["^build-force"]
     },
     "build-force": {
       "outputs": ["dist/**"]
