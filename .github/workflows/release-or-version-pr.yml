@@ -57,3 +57,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Uncomment and add secrets to allow publishing
           # NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Create GitHub Release
+        if: steps.changesets.outputs.published == 'true'
+        uses: softprops/action-gh-release@v1
+        with:
+          token: ${{ secrets.GH_ORG_TOKEN }}
+          tag_name: ${{ steps.changesets.outputs.version }}
+          name: ${{ steps.changesets.outputs.version }}
+          body: ${{ steps.changesets.outputs.release_notes }}
