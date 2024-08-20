@@ -45,6 +45,8 @@ jobs:
           cwd: ${{ github.workspace }}
           title: 'chore(release): version packages 🦋'
           commit: 'chore(release): version packages 🦋'
+          publish: yarn publish:packages
+          version: yarn version:packages
           # Optional, might be used in conjunction with GITHUB_TOKEN to
           # allow running the workflows on a Version package action.
           # Be aware of security implications.
