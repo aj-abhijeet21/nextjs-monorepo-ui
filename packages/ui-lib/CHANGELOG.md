@@ -1,5 +1,11 @@
 # @ajabhijeet21-internal/ui-lib
 
+## 4.0.0
+
+### Major Changes
+
+- [#1](https://github.com/aj-abhijeet21/nextjs-monorepo-ui/pull/1) [`f706f46`](https://github.com/aj-abhijeet21/nextjs-monorepo-ui/commit/f706f462f00f88c40aa57aa2f1bc4916e0201db5) Thanks [@aj-abhijeet21](https://github.com/aj-abhijeet21)! - New button component from shadcn
+
 ## 3.15.2
 
 ### Patch Changes
