@@ -32,7 +32,7 @@ jobs:
 
       - name: Build monorepo
         run: |
-          yarn g:build
+          yarn turbo build-force --filter=@ajabhijeet21-internal/ui-lib
           cat .npmrc
           ls -R packages/*/dist
 
