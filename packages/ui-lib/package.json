@@ -1,6 +1,5 @@
 {
   "name": "@ajabhijeet21-internal/ui-lib",
-  "private": false,
   "version": "5.0.0",
   "sideEffects": false,
   "type": "module",
@@ -43,9 +42,18 @@
   },
   "dependencies": {
     "@ajabhijeet21-internal/ts-utils": "workspace:^",
+    "@mui/base": "5.0.0-beta.58",
+    "@phosphor-icons/react": "2.1.7",
+    "@radix-ui/react-icons": "1.3.0",
+    "@radix-ui/react-label": "2.1.0",
+    "@radix-ui/react-select": "2.1.1",
     "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.1"
+    "clsx": "^2.1.1",
+    "cross-env": "7.0.3",
+    "react-dropzone": "14.2.3",
+    "tailwind-merge": "2.5.2",
+    "vite-plugin-node-polyfills": "0.22.0"
   },
   "devDependencies": {
     "@ajabhijeet21-internal/eslint-config-bases": "workspace:^",
