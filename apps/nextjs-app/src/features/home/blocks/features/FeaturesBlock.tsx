@@ -1,3 +1,4 @@
+import { Button } from '@ajabhijeet21-internal/ui-lib';
 import styled from '@emotion/styled';
 import {
   AccessAlarm,
@@ -80,6 +81,12 @@ export const FeaturesBlock: FC<Props> = () => {
                   <dd className="ml-16 mt-2 text-base text-gray-500">
                     {feature.description}
                   </dd>
+                  <Button
+                    variant={'primary'}
+                    className="bg-red-300 px-4 py-2 text-black"
+                  >
+                    My Button
+                  </Button>
                 </div>
               ))}
             </dl>

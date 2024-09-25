@@ -5,9 +5,12 @@ on:
     branches: [main]
   workflow_dispatch:
 
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
 jobs:
   release:
     # Basic security: the release job can only be executed from this repo and from the main branch (not a remote thing)
+
     if: ${{ github.repository == 'aj-abhijeet21/nextjs-monorepo-ui' && contains('refs/heads/main',github.ref)}}
     name: 🚀 Release and changelog
     runs-on: ubuntu-latest
@@ -30,41 +33,30 @@ jobs:
       - name: 📥 Monorepo install
         uses: ./.github/actions/yarn-nm-install
 
-      - name: Build monorepo
-        run: |
-          yarn g:build  
-          # yarn turbo build-force --filter=@ajabhijeet21-internal/ui-lib
-          cat .npmrc
-          ls -lrt
-          ls -R packages/*/dist
-
       # @link https://github.com/changesets/action
       - name: 🦋 Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
         with:
-          # publish: yarn g:release
           cwd: ${{ github.workspace }}
           title: 'chore(release): version packages 🦋'
           commit: 'chore(release): version packages 🦋'
-          publish: yarn publish:packages
           version: yarn version:packages
-          # Optional, might be used in conjunction with GITHUB_TOKEN to
-          # allow running the workflows on a Version package action.
-          # Be aware of security implications.
-          # setupGitUser: true
         env:
           # See https://github.com/changesets/action/issues/147
           HOME: ${{ github.workspace }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Uncomment and add secrets to allow publishing
-          # NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_CONFIG_USERCONFIG: ${{ github.workspace }}/.npmrc
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Create GitHub Release
-        if: steps.changesets.outputs.published == 'true'
-        uses: softprops/action-gh-release@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          tag_name: ${{ steps.changesets.outputs.version }}
-          name: ${{ steps.changesets.outputs.version }}
-          body: ${{ steps.changesets.outputs.release_notes }}
+      - name: Publish packages
+        id: publish-packages
+        if: steps.changesets.outputs.hasChangesets == 'false'
+        run: |
+          yarn publish:packages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_CONFIG_USERCONFIG: ${{ github.workspace }}/.npmrc
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
